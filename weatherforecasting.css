@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+.weather-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.heading {
+    text-align: center;
+    color: #5e432b; /* Brown color */
+    transition: all 0.3s ease;
+}
+
+.location {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.temperature, .conditions {
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.day {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.day:hover {
+    background-color: #d4d4d4;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .weather-container {
+        padding: 20px;
+    }
+
+    .day {
+        padding: 15px;
+    }
+}
+
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+.weather-container {
+    border: 2px solid #333;
+}
+
+.heading {
+    color: #2a9d8f; /* Teal color */
+}
+
+.location {
+    color: #2a9d8f; /* Teal color */
+}
+
+.current-weather {
+    color: #0d03035e; /* Carrot color */
+}
+
+.temperature, .conditions {
+    color: rgba(230, 125, 34, 0.611)ab; /* Carrot color */
+}
+
+.forecast {
+    color: rgba(241, 15, 15, 0.424); /* Sunflower color */
+}
+
+.day:hover {
+    background-color: rgb(219, 52, 52); /* Cornflower color */
+    color: #fff;
+}
